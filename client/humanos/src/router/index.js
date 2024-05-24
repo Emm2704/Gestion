@@ -1,11 +1,74 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+// import EmployeeList from '@/components/Empleado.vue';
+// import DepartmentList from '@/components/Department.vue';
+// import PayrollList from '@/components/Nomina.vue';
+// import BenefitList from '@/components/Beneficios.vue';
+// import TrainingList from '@/components/Capacitaciones.vue';
+
+import EmployeeView from '@/views/EmployeeView.vue';
+import DepartmentView from '@/views/DepartmentView.vue';
+import PayrollView from '@/views/PayrollView.vue';
+import BenefitView from '@/views/BenefitView.vue';
+import TrainingView from '@/views/TrainingView.vue';
+
 
 const routes = [
   {
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  // {
+  //   path: '/',
+  //   name: 'EmployeeList',
+  //   component: EmployeeList
+  // },
+  // {
+  //   path: '/departments',
+  //   name: 'DepartmentList',
+  //   component: DepartmentList
+  // },
+  // {
+  //   path: '/payrolls',
+  //   name: 'PayrollList',
+  //   component: PayrollList
+  // },
+  // {
+  //   path: '/benefits',
+  //   name: 'BenefitList',
+  //   component: BenefitList
+  // },
+  // {
+  //   path: '/trainings',
+  //   name: 'TrainingList',
+  //   component: TrainingList
+  // },
+
+  {
+    path: '/',
+    name: 'EmployeeView',
+    component: EmployeeView
+  },
+  {
+    path: '/departments',
+    name: 'DepartmentView',
+    component: DepartmentView
+  },
+  {
+    path: '/payrolls',
+    name: 'PayrollView',
+    component: PayrollView
+  },
+  {
+    path: '/benefits',
+    name: 'BenefitView',
+    component: BenefitView
+  },
+  {
+    path: '/trainings',
+    name: 'TrainingView',
+    component: TrainingView
   },
   {
     path: '/about',
@@ -21,5 +84,7 @@ const router = createRouter({
   history: createWebHashHistory(),
   routes
 })
+
+
 
 export default router
