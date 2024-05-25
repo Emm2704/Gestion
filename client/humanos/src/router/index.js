@@ -1,10 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-// import EmployeeList from '@/components/Empleado.vue';
-// import DepartmentList from '@/components/Department.vue';
-// import PayrollList from '@/components/Nomina.vue';
-// import BenefitList from '@/components/Beneficios.vue';
-// import TrainingList from '@/components/Capacitaciones.vue';
+
 
 import EmployeeView from '@/views/EmployeeView.vue';
 import DepartmentView from '@/views/DepartmentView.vue';
@@ -19,32 +15,7 @@ const routes = [
     name: 'home',
     component: HomeView
   },
-  // {
-  //   path: '/',
-  //   name: 'EmployeeList',
-  //   component: EmployeeList
-  // },
-  // {
-  //   path: '/departments',
-  //   name: 'DepartmentList',
-  //   component: DepartmentList
-  // },
-  // {
-  //   path: '/payrolls',
-  //   name: 'PayrollList',
-  //   component: PayrollList
-  // },
-  // {
-  //   path: '/benefits',
-  //   name: 'BenefitList',
-  //   component: BenefitList
-  // },
-  // {
-  //   path: '/trainings',
-  //   name: 'TrainingList',
-  //   component: TrainingList
-  // },
-
+ 
   {
     path: '/',
     name: 'EmployeeView',

@@ -1,30 +1,43 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div id="app">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+      <a class="navbar-brand" href="#">Gestión de Recursos Humanos</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <router-link class="nav-link" to="/">Home</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/employees">Empleados</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/departments">Departamentos</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/payrolls">Nóminas</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/benefits">Beneficios</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/trainings">Capacitaciones</router-link>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <router-view/>
+  </div>
 </template>
 
+<script>
+export default {
+  name: 'App'
+};
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
+/* Estilos opcionales para App */
 </style>
